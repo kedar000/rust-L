@@ -38,7 +38,7 @@ fn main() {
 }
 
 //assignment - 1
-f n even_vector(vec : &mut Vec<i32>){
+fn even_vector(vec : &mut Vec<i32>){
     for i in 1..100{
         if i % 2 == 0{
             vec.push(i);
