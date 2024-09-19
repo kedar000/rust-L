@@ -87,3 +87,4 @@ fn correct_return_first_word(str : &String) -> &str{
 
     return &str[0..index];
 }
+ 
