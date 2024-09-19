@@ -48,7 +48,34 @@ fn main() {
     println!("{}" , val);
   }
 
+  // 5-iterator
+  //into_iter
+  /* the into iterhator is used to convert a collection into an interator that takes ownership of the collection 
+     boost in the performance 
+   */
 
-  
+  let num_5 = vec![10 , 9 , 8 , 7 ];
+  let iter_5 = num_5.into_iter();
+
+  for value in iter_5{
+    println!("{}" , value);
+  }
+
+  // println!("{:?}" , num_5); this line gives the error 
+
+
 
 }
+
+
+// conclusion :
+/*
+Iter : 
+-> if you wnat immutable reference to the inner variables and dont ant to transfer ownership
+
+IterMut : 
+-> if you want mutable reference to the inner variables and dont want to transfer iwnership
+
+IterInto : 
+-> if you want to mmove the variable into the iterator and dont want to use it afterwards
+*/
